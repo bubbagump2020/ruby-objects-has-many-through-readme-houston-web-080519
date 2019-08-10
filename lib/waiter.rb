@@ -27,7 +27,7 @@ class Waiter
       
   def best_tipper
     result = []
-    best_tipped_meal = meals.max do |meal_a|
+    best_tipped_meal = meals.max do |meal_a, meal_b|
       result << meal_a.tip
       binding.pry
     end
